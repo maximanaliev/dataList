@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import Main from "./containers/Main";
+import {ToastContainer} from "react-toastify";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <CssBaseline/>
+        <ToastContainer
+            draggable={false}
+            hideProgressBar
+            autoClose={3000}
+            style={{ width: 250}}
+        />
+        <Main/>
     </div>
   );
 }

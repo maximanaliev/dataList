@@ -1,0 +1,1 @@
+export const apiURL = 'https://opentdb.com';
